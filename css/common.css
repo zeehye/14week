@@ -1,0 +1,407 @@
+body {
+    color: #000000;
+    /* background-color: #F06334; */
+    font-family: 'pretendard','Gilroy';
+}
+.mainSec {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    padding-top: 94px;
+    background-color: #F06334;
+}
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* .main img {
+    position: absolute;
+    width: calc(100vw * 50 / 1920);
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+*/
+/* .mainImg {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+} */
+/* .mainImg img {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+} */
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.main h1 {
+    /* margin-top: calc(100vh * 70 / 1920); */
+    font-size: calc(100vw * 100 / 1920);
+    font-family: 'Gilroy';
+}
+.main p {
+    font-size: 1.2em;
+    margin-top: calc(100vh * 10.5 / 1080);
+
+}
+/* 두번쨰 섹션 */
+.sec1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background: #fff;
+}
+.sec1_left {
+    width: 61.4vw;
+    /* float: left; */
+    display: inline-block;
+}
+.sec1_left .personPart{
+    position: absolute;
+    top: calc(100vh * 283 / 1080);
+    left: 25vw;
+}
+.sec1_left .imgPart1 {
+    position: absolute;
+    top: calc(100vh * 238 / 1080);
+    left: 16vw;
+}
+.sec1_left .imgPart2 {
+    position: absolute;
+    top: calc(100vh * 222 / 1080);
+    left: 41vw;
+}
+.sec1_left .imgPart3 {
+    position: absolute;
+    top: calc(100vh * 453 / 1080);
+    left: 20vw;
+}
+.sec1_left .imgPart4 {
+    position: absolute;
+    top: calc(100vh * 752 / 1080);
+    left: 16vw;
+}
+.sec1_left .imgPart5 {
+    position: absolute;
+    top: calc(100vh * 832 / 1080);
+    left: 19.6vw;
+}
+.sec1_left .imgPart6 {
+    position: absolute;
+    top: calc(100vh * 770 / 1080);
+    left: 45.7vw;
+}
+.sec1_right {
+    display: inline-block;
+    /* border: solid 1px red; */
+    margin-top: calc(100vh * 280 / 1080);
+    height: 28.6vw;
+}
+.sec1_right .infoText1 {
+    font-size: 1.04vw;
+    color: #F06334;
+    font-weight: 800;
+}
+.sec1_right .infoText2 {
+    font-size: 4.1vw;
+    color: #000000;
+    font-weight: 800;
+    font-family: 'Gilroy';
+}
+.sec1_right .infoText3 {
+    font-size: 2vw;
+    color: #BDBDBD;
+    font-weight: 800;
+    margin-left: 8.1vw;
+}
+.sec1_right .infoText4 {
+    font-size: 1.5vw;
+    color: #000000;
+    font-weight: 800;
+    margin-top: calc(100vh * 65 / 1080);
+}
+.sec1_right .infoText5 {
+    font-size: 1vw;
+    color: #000000;
+    font-weight: 400;
+    margin-top: calc(100vh * 25 / 1080);
+    width: 31vw;
+    line-height: 160%;
+}
+/* footer {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/* 2022.11.30 */
+
+/* 모바일용 CSS ----------------------------------------------------*/
+/* 기본 CSS */
+.container {
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+}
+
+.cfixed:after,
+.container:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.sec-tit {
+    font-size: 42px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.divider {
+    width: 90%;
+    max-width: 1132px;
+    margin: 0 auto;
+    margin-top: 77px;
+    background: #eee;
+}
+
+.m-divider {
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 77px;
+    background: #000000;
+}
+
+/* 헤더 영역 CSS */
+
+.header {
+    position: relative;
+    top: 0;
+    padding: 18px 5%;
+    border-bottom: 1px solid #000000;
+    background-color: #f0633400;
+    z-index: 3;
+    /* border: solid 1px red; */
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    font-size: 26px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.header .gnb {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #F06334;
+}
+
+.header .gnb li {
+    border-bottom: 1px solid #000000;
+}
+
+.header .gnb li a {
+    display: block;
+    padding: 14px 0 14px 5%;
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Gilroy';
+}
+
+.header .menu-toggle-btn {
+    float: right;
+    width: 20px;
+    margin-top: calc(100vh * 20 / 1080);
+    cursor: pointer;
+}
+
+.header .menu-toggle-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+    margin: 5px 0;
+}
+
+/* 슬라이더 영역 CSS */
+.slider img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.main_bg img {
+    width: 100%;
+    z-index: -10;
+    max-width: 100%;
+    position: absolute;
+
+}
+
+/* 디스플레이 영역 CSS */
+.display-section {
+    margin-top: 59px;
+    text-align: center;
+}
+
+.display-section .sec-tit {
+    margin-bottom: 30px;
+}
+
+.display-section .desc {
+    font-family: 'PT Serif';
+    color: #616161;
+    line-height: 1.9;
+}
+
+/* 푸터 영역 CSS */
+.footer {
+    margin-top: 104px;
+}
+
+.footer iframe {
+    width: 100%;
+    height: 320px;
+}
+
+.footer p {
+    margin: 21px 0;
+    color: #000000;
+    text-align: center;
+}
+
+/* 태블릿용 CSS ----------------------------------------------------*/
+@media all and (min-width:768px) {
+
+    /* 기본 CSS */
+    .divider {
+        margin-top: 124px;
+    }
+
+    .m-divider {
+        margin-top: 124px;
+    }
+
+    /* 헤더 영역 CSS */
+
+    .header {
+        position: static;
+        /* position: fixed; */
+        padding: 20px 60px;
+    }
+
+    .header .gnb {
+        display: block !important;
+        position: static;
+        z-index: 9;
+        float: right;
+        width: auto;
+        margin-top: calc(100vh * 15 / 1080);
+        background: none;
+    }
+
+    .header .gnb li {
+        float: left;
+        margin-left: 30px;
+        border-bottom: 0;
+    }
+
+    .header .gnb li a {
+        padding: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .header .menu-toggle-btn {
+        display: none !important;
+    }
+
+    /* 디스플레이 영역 CSS */
+    .display-section {
+        margin-top: 95px;
+    }
+
+
+    /* 푸터 영역 CSS */
+    .footer iframe {
+        height: 432px;
+    }
+
+    .footer p {
+        margin: 34px 0;
+    }
+}
+
+/* PC용 CSS ----------------------------------------------------*/
+@media all and (min-width:1132px) {
+
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
+    section .sec1 {
+        /* width: 100vw; */
+        height: 100vh;
+    }
+
+    /* 디스플레이 영역 CSS */
+    .display-section {
+        text-align: left;
+    }
+
+    .display-section .sec-tit {
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .display-section .desc {
+        position: relative;
+        float: right;
+        padding-left: 20px;
+        font-family: 'PT Serif';
+        color: #616161;
+        line-height: 1.9;
+    }
+
+    .display-section .desc:before {
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 2px;
+        height: 44px;
+        background: #e0e0e0;
+        content: "";
+    }
+
+
+}
